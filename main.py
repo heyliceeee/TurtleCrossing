@@ -32,17 +32,18 @@ def game():
         screen.update()  # show the initial game
         time.sleep(0.1) # a brief pause to show the movement
 
+        car.create() # create cars
         car.move_cars() # move cars
 
-        if player.is_at_finish_line(): # detect if need increase level
+        for current_car in car.all_cars: # detect collision with player and car
+            if current_car.distance(player) < 20: # if the current car is close to player
+                is_game_on = False # stop the game
+                scoreboard.game_over()
+
+        if player.is_at_finish_line(): # detect successful crossing
             scoreboard.increase_level() # increase level
             car.increase_speed_cars() # increase speed of cars
             player.go_to_start() # move player to start
-
-        for current_car in car.all_cars: # detect collision with player and car
-            if current_car.distance(player) < 5: # if the current car is close to player
-                is_game_on = False # stop the game
-                scoreboard.game_over()
 
 create_screen() # create the screen
 game() # move the player to forward until the game ends
