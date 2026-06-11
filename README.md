@@ -1,72 +1,67 @@
 # 🐢 Turtle Crossing
 
-Um mini‑jogo desenvolvido em **Python** com o módulo **Turtle Graphics**.  
-O objetivo é simples: **ajudar a tartaruga a atravessar a estrada**, desviando‑se dos carros que passam a velocidades cada vez maiores.
-
-
-
-
+A mini‑game developed in **Python** using the **Turtle Graphics** module.  
+The goal is simple: **help the turtle cross the road** while avoiding cars that move at increasingly higher speeds.
 
 ---
 
-## 🎯 Objetivo do Jogo  
-Controlar a tartaruga até à linha de chegada, evitando colisões com os carros.  
-A cada travessia bem‑sucedida:
+## 🎯 Game Objective  
+Guide the turtle to the finish line while avoiding collisions with cars.  
+With each successful crossing:
 
-- O **nível aumenta**
-- A **velocidade dos carros cresce**
-- A dificuldade torna‑se maior
+- The **level increases**
+- The **car speed grows**
+- The difficulty becomes higher
 
 ---
 
-## 🧠 Funcionalidades Principais  
+## 🧠 Main Features  
 
-- **Movimento do jogador** com a tecla **Up**  
-- **Geração aleatória de carros** com cores e posições variadas  
-- **Aumento progressivo da velocidade**  
-- **Sistema de níveis** com atualização visual  
-- **Deteção de colisões**  
-- **Mensagem de Game Over**  
-- Estrutura modular com classes separadas:
+- **Player movement** using the **Up** key  
+- **Random car generation** with varied colors and positions  
+- **Progressive speed increase**  
+- **Level system** with visual updates  
+- **Collision detection**  
+- **Game Over message**  
+- Modular structure with separate classes:
   - **CarManager**  
   - **Player**  
   - **Scoreboard**  
 
 ---
 
-## 🧩 Descrição dos Componentes  
+## 🧩 Component Description  
 
-### 🚗 CarManager
-Responsável por:
-- Criar carros aleatórios  
-- Controlar o movimento horizontal  
-- Aumentar a velocidade a cada nível  
-
----
-
-### 🐢 Player
-A tartaruga controlada pelo utilizador:
-- Começa sempre na posição inicial  
-- Move‑se para cima com a tecla **Up**  
-- Verifica se atingiu a linha de chegada  
-- Regressa ao início após cada nível  
+### 🚗 CarManager  
+Responsible for:
+- Creating random cars  
+- Controlling horizontal movement  
+- Increasing speed each level  
 
 ---
 
-### 🧮 Scoreboard
-Mostra:
-- O nível atual  
-- A mensagem de **Game Over**  
-- Atualiza o texto sempre que o nível muda  
+### 🐢 Player  
+The turtle controlled by the user:
+- Always starts at the initial position  
+- Moves upward with the **Up** key  
+- Checks if it reached the finish line  
+- Returns to the start after each level  
 
 ---
 
+### 🧮 Scoreboard  
+Displays:
+- The current level  
+- The **Game Over** message  
+- Updated text whenever the level changes  
 
-## 📚 Conceitos Praticados  
+---
 
-- Programação orientada a objetos (OOP)  
-- Animação com `screen.tracer()`  
-- Deteção de colisões  
-- Geração aleatória  
-- Modularização do código  
-- Eventos de teclado com `onkey()`
+## 📚 Concepts Practiced  
+
+- Object‑oriented programming (OOP)  
+- Animation with `screen.tracer()`  
+- Collision detection  
+- Random generation  
+- Code modularization  
+- Keyboard events with `onkey()`  
